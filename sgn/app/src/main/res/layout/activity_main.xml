@@ -5,69 +5,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:background="#FFFFFF"
-        android:orientation="vertical"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <ImageView
-            android:layout_margin="30dp"
-            android:src="@drawable/img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></ImageView>
-
-        <EditText
-            android:textColor="#08316D"
-            android:textColorHint="#08316D"
-            android:layout_margin="30dp"
-            android:drawablePadding="10dp"
-            android:drawableLeft="@drawable/ic_vector__1_"
-            android:hint="Username"
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></EditText>
+            android:layout_height="match_parent">
 
-        <EditText
-            android:inputType="textPassword"
-            android:textColorHint="#08316D"
-            android:textColor="#08316D"
-            android:layout_marginBottom="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
-            android:drawablePadding="10dp"
-            android:drawableLeft="@drawable/ic_group__1_"
-            android:hint="Password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></EditText>
+            <ImageView
+                android:layout_margin="30dp"
+                android:src="@drawable/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
 
-        <Spinner
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"></Spinner>
+            <EditText
+                android:textColor="#08316D"
+                android:textColorHint="#08316D"
+                android:layout_margin="30dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_vector__1_"
+                android:hint="Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
 
-        <TextView
-            android:layout_marginTop="40dp"
-            android:textColor="#08316D"
-            android:layout_gravity="center"
-            android:textSize="18dp"
-            android:text="Olvide mi contraseña"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></TextView>
+            <EditText
+                android:inputType="textPassword"
+                android:textColorHint="#08316D"
+                android:textColor="#08316D"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_group__1_"
+                android:hint="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
 
-        <Button
-            android:id="@+id/btnlogin"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="60dp"
-            android:text="INICIAR SESION"
-            android:textColor="#FFFFFF"
-            android:background="#05294C"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></Button>
+            <Spinner
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"></Spinner>
 
-    </LinearLayout>
+            <TextView
+                android:layout_marginTop="40dp"
+                android:textColor="#08316D"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:text="Olvide mi contraseña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <Button
+                android:layout_marginBottom="30dp"
+                android:id="@+id/btnlogin"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="60dp"
+                android:text="INICIAR SESION"
+                android:textColor="#FFFFFF"
+                android:background="#05294C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Button>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
     </layout>

@@ -4,62 +4,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".DocumentoActivity">
-    
-    <LinearLayout
-        android:background="#FFFFFF"
-        android:orientation="vertical"
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <!--Inicio del encabezadp-->
-        <include
-            layout="@layout/header_layout"
-            ></include>
-        <!--Fin del encabezado-->
-
-        <!--Inicio del cuerpo-->
-
         <LinearLayout
+            android:background="#FFFFFF"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
+            android:layout_height="match_parent">
+
+            <!--Inicio del encabezadp-->
+            <include
+                layout="@layout/header_layout"
+                ></include>
+            <!--Fin del encabezado-->
+
+            <!--Inicio del cuerpo-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/img_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"></ImageView>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="55dp"
-                android:src="@drawable/img_2"
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"></ImageView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="50dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-                    <ImageView
-                        android:id="@+id/btnNuevoDocumento"
-                        android:layout_marginRight="20dp"
-                        android:src="@drawable/img_17"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"></ImageView>
-                    <ImageView
-                        android:src="@drawable/img_18"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"></ImageView>
-                    <ImageView
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/img_19"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"></ImageView>
-        </LinearLayout>
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/btnNuevoDocumento"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/img_17"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"></ImageView>
+                <ImageView
+                    android:src="@drawable/img_18"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"></ImageView>
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/img_19"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"></ImageView>
+            </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_marginTop="40dp"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <ImageView
                     android:src="@drawable/img_20"
                     android:layout_width="100dp"
@@ -69,12 +72,13 @@
                     android:src="@drawable/img_21"
                     android:layout_width="100dp"
                     android:layout_height="100dp"></ImageView>
+            </LinearLayout>
+
+
+
+
+
         </LinearLayout>
-
-
-
-
-
-    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </layout>

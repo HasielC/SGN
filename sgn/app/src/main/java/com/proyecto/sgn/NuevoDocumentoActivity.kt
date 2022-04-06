@@ -1,5 +1,6 @@
 package com.proyecto.sgn
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -13,9 +14,12 @@ class NuevoDocumentoActivity : AppCompatActivity() {
         binding=ActivityNuevoDocumentoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.spinner
+        binding.btnReportado.setOnClickListener {
+            val intent = Intent(NuevoDocumentoActivity@this,ReportadoActivity::class.java)
+        startActivity(intent)
+        }
 
-        val lista = listOf("PHP","C++","SQL","Java")
+        val lista = listOf("Formulario","Introduccion de trabajo","Procedimiento","Manual")
 
         val adaptador = ArrayAdapter(this,android.R.layout.simple_spinner_item,lista)
         binding.spinner.adapter=adaptador
